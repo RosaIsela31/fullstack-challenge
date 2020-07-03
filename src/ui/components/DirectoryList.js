@@ -17,31 +17,12 @@ const DirectoryList = () => {
             .then(response => {
                 const responseData = response.data.data;
 
-                const arrayResponseData = [
-                    responseData[0],
-                    responseData[1],
-                    responseData[2],
-                    responseData[3],
-                    responseData[4],
-                    responseData[5],
-                    responseData[6],
-                    responseData[7],
-                    responseData[8],
-                    responseData[9],
-                    responseData[10],
-                    responseData[11],
-                    responseData[12],
-                    responseData[13],
-                    responseData[14],
-                    responseData[15],
-                    responseData[16],
-                    responseData[17],
-                    responseData[18],
-                    responseData[19],
-                    responseData[20],
-                    responseData[21],
-                    responseData[22],
-                ];
+                let arrayResponseData = []; 
+                
+                responseData.map((item) => {
+                    return arrayResponseData.push(item)
+                });
+
                 setInitialStore({
                     ...initialStore,
                     data: arrayResponseData,
