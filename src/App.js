@@ -1,15 +1,12 @@
 import DirectoryList from "ui/components/DirectoryList";
-
-const fetchOffersList = () => {
-    return [];
-};
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 export default function App() {
     return (
-        <>
-            <p class="py-4 text-lg text-center">Start here :) Good luck!</p>
-
-            <DirectoryList offerList={fetchOffersList()} />
-        </>
+        <BrowserRouter>
+            <Switch>
+                <Route path="/" component={DirectoryList} />
+            </Switch>
+        </BrowserRouter>
     );
 }
