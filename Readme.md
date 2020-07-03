@@ -26,16 +26,14 @@ Kanban board
     The most important thing in this moment was undertand very well the code challenge and planning my form to work. My first steps were fork the project, clone my remote repository, install the dependencies and start the project with npm start.
 
 -   ### Connect to Reworth API
+
     To this task I used axios library. I did GET to this url `https://e6di35qzm7.execute-api.us-west-2.amazonaws.com/latest/directory` and then I had the data.
 
-The second step was save this information into DirectoryList.js state (with hooks) and finally I used map and RenderList Component to render the data.
+    The second step was save this information into DirectoryList.js state (with hooks) and finally I used map and RenderList Component to render the data.
 
 -   ### Design
 
     I toke time to plainning the interface, components, color, interaction. I decided use react-router to do more interesting the user navigation.
-
--   ### README
-    I wrote about the explanation of this project to be more ease the understand and the run.
 
 ## Tools used:
 
