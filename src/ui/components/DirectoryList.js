@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import axios from "axios";
-
 import RenderList from "./RenderList";
-import Header from "./Header";
+import Navbar from "./Navbar";
 
 const DirectoryList = () => {
     const [initialStore, setInitialStore] = useState({
@@ -55,7 +54,12 @@ const DirectoryList = () => {
 
     return (
         <div className="principal-container">
-            <Header />
+            <Navbar />
+            <div className="info">
+                <b>
+                    Estos establecimientos tienen OFERTAS para ti, ¡Descúbrelas!
+                </b>
+            </div>
             <div className="container">
                 {initialStore.data.map(item => {
                     return (

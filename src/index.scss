@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: "Muli", sans-serif;
-    background: black;
+    background: #fff;
     display: flex;
     flex-direction: column;
     // align-items: center;
@@ -22,7 +22,8 @@ body {
 // *****   RENDERLIST STYLES   *****
 .carousel-item {
     border-radius: 15px;
-    margin: 3rem;
+    margin-left: 4rem;
+    margin-top: 3rem;
     overflow: hidden;
     position: relative;
     display: inline-block;
@@ -34,15 +35,15 @@ body {
     transition: 450ms all;
     -webkit-transform-origin: center left;
     transform-origin: center left;
-    background-color: gray;
+    background-color: #457b9d;
 }
 
 .carousel-item__details {
     align-items: flex-start;
     background: linear-gradient(
         to top,
-        rgba(0, 0, 0, 0.9) 0%,
-        rgba(0, 0, 0, 0) 100%
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0) 100%
     );
     bottom: 0;
     display: flex;
@@ -56,7 +57,7 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    color: #fff;
+    color: black;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -65,7 +66,7 @@ body {
 }
 
 .discovery {
-    font-family: fantasy;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     color: #fff;
 }
 
@@ -79,15 +80,45 @@ body {
 
 // *****   DIRECTORYLIST STYLES   *****
 .principal-container {
-    margin: 0;
+    margin: 0 auto;
 }
 
-// *****   HEADER STYLES   *****
-.header {
-    // background-color: bisque;
-    width: 100%;
+.info {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1rem;
+    color: gray;
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
+
+// *****   NAVBAR STYLES   *****
+.nav {
+    background-color: #457b9d;
     margin: 0;
-    height: 7rem;
+    height: 9rem;
     padding: 1rem;
     position: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+.atag {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+.options-nav {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.img-reworth {
+    height: 3.5rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
 }
