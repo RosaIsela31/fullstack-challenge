@@ -18,9 +18,6 @@ const Header = () => {
                 <Link to="/us" className="atag">
                     Nosotros
                 </Link>
-                <Link to="/success" className="atag">
-                    Historias de Éxito
-                </Link>
             </div>
         </nav>
     );
