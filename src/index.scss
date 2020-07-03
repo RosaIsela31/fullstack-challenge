@@ -120,3 +120,35 @@ body {
     margin-left: 3rem;
     margin-top: 1rem;
 }
+
+// ABOUT US
+
+.us-information {
+    background-image: url("./static/img/bakery.jpg");
+    height: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 5rem;
+    padding-top: 15rem;
+}
+
+.title-us {
+    text-align: center;
+}
+
+.container-title-us {
+    height: 30rem;
+    width: 100%;
+    padding-top: 4rem;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.details-us {
+    height: 10rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: black;
+    padding: 3rem;
+}
