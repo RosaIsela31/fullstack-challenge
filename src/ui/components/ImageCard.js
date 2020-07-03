@@ -1,11 +1,12 @@
-const ImageCard = ({ image, key, url }) => {
-    console.log("url", url);
+// const ImageCard = ({ image }) => {
+//     console.log("url", url);
 
-    return (
-        <div>
-            <img ref={key} alt={key} src={url} />
-        </div>
-    );
-};
+//     const {url} = image.url;
+//     return (
+//         <div>
+//             <img ref={id} alt={id} src={url} />
+//         </div>
+//     );
+// };
 
-export default ImageCard;
+// export default ImageCard;

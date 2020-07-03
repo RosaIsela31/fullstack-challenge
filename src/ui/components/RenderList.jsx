@@ -1,34 +1,14 @@
-import "../../index.scss";
-import axios from "axios";
-import { useEffect } from "react";
 import ImageList from "./ImageList";
+import items from "../../dataimg/items";
+import "../../index.scss";
 
-const RenderList = ({ item }) => {
-    const [images, setImages] = useState({
-        data: [],
-    });
-
-    useEffect(() => {
-        axios
-            .get("https://picsum.photos/v2/list")
-            .then(response => {
-                const responseData = response.data;
-                setImages({
-                    ...images,
-                    data: [responseData],
-                });
-            })
-            .catch(error => {
-                console.log(error);
-            });
-    }, []);
-
-    const { name } = item;
+const RenderList = () => {
+    const allItems = items;
     return (
         <div className="carousel-item">
             <div className="container-discovery">
                 <h2 className="discovery">Descubre la Oferta!</h2>
-                <ImageList imagess={images.data} />
+                {<ImageList allItems={allItems} />}
             </div>
             <div className="carousel-item__details">
                 <h2>Oferta</h2>

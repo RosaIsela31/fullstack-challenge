@@ -1,12 +1,9 @@
-import ImageCard from "./ImageCard";
-
-const ImageList = ({ imagess }) => {
-    console.log("images", imagess);
-
-    const images = imagess.map(image => {
-        return <ImageCard key={image.id} image={image} url={image[0].url} />;
+const ImageList = ({ allItems }) => {
+    const images = allItems.map(image => {
+        return <img key={image.id} alt={image.id} src={image.url} />;
     });
-    return <div>{images}</div>;
+
+    return <>{images}</>;
 };
 
 export default ImageList;
