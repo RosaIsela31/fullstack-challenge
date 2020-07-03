@@ -7,7 +7,6 @@ const DirectoryList = () => {
     const [initialStore, setInitialStore] = useState({
         data: [],
     });
-    console.log("initialStore", initialStore.data);
 
     useEffect(() => {
         axios
@@ -17,10 +16,10 @@ const DirectoryList = () => {
             .then(response => {
                 const responseData = response.data.data;
 
-                let arrayResponseData = []; 
-                
-                responseData.map((item) => {
-                    return arrayResponseData.push(item)
+                const arrayResponseData = [];
+
+                responseData.map(item => {
+                    return arrayResponseData.push(item);
                 });
 
                 setInitialStore({
