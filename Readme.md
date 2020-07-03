@@ -12,8 +12,9 @@ Have a code editor, a terminal and that's all.
 
 ## Installation
 
--   Fork and clone this repository
--   Now, in your terminal run npm install and you are ready to go.
+-   Fork and clone this repository.
+-   Now in your terminal run npm install.
+-   And finally, you can run the project with npm start.
 
 ## Tools used:
 
