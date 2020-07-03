@@ -11,8 +11,12 @@ const RenderList = ({ name }) => {
                 {<ImageList allItems={allItems} />}
             </div>
             <div className="carousel-item__details">
-                <h2>¡OFERTA!</h2>
-                <div>Tipo de oferta: {name}</div>
+                <h2>
+                    <b>¡OFERTA!</b>
+                </h2>
+                <div>
+                    <b>Tipo de oferta: {name}</b>
+                </div>
             </div>
         </div>
     );
