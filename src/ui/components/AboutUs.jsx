@@ -1,5 +1,4 @@
 import Navbar from "./Navbar";
-import bakery from "../../static/img/bakery.jpg";
 
 const AboutUs = () => {
     return (
