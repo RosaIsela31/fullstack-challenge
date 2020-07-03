@@ -27,7 +27,7 @@ const RenderList = ({ item }) => {
     return (
         <div className="carousel-item">
             <div className="container-discovery">
-                <h2 className="discovery">Descubre la Oferta</h2>
+                <h2 className="discovery">Descubre la Oferta!</h2>
                 <ImageList imagess={images.data} />
             </div>
             <div className="carousel-item__details">
