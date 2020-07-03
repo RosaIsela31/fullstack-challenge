@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import axios from "axios";
 
-import RenderList from "./RenderList";
-import Header from "./Header";
+import RenderList from "../components/RenderList";
+import Header from "../components/Header";
 
 const DirectoryList = () => {
     const [initialStore, setInitialStore] = useState({
