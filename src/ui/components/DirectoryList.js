@@ -7,12 +7,11 @@ const DirectoryList = () => {
     const [initialStore, setInitialStore] = useState({
         data: [],
     });
-
+    const URL =
+        "https://e6di35qzm7.execute-api.us-west-2.amazonaws.com/latest/directory";
     useEffect(() => {
         axios
-            .get(
-                "https://e6di35qzm7.execute-api.us-west-2.amazonaws.com/latest/directory",
-            )
+            .get(URL)
             .then(response => {
                 const responseData = response.data.data;
 
